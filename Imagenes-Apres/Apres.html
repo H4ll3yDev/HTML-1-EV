@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Apres </title>
+           
+           <style>
+               
+               
+               @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+               
+            body {
+                font-family: "Merriweather", "lato";
+                line-height: 1.6;
+                 
+            }
+            
+            h3 {
+                font-family: Merriweather;   
+               }
+            
+            a {
+                text-decoration: none;
+                color: #3f3f3f;
+            
+            }
+               
+            p {
+                font-family: lato
+               }   
+
+            
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 2rem;
+                font-family: Lato;
+                margin: 0 200px 0 200px;
+                
+                
+            }
+
+            .logo {
+                height: 40px;
+            }
+
+            div a {
+                margin-right: 5rem;
+                font-weight: 700;
+                
+            }
+
+            .btnarriba {
+                color: white;
+                background: #fb505d;
+                padding: 5px 5px;
+                border-radius: 10px;
+            }
+
+           
+            .fila2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem;
+                margin: 0 200px 0 200px;
+            }
+
+            .textoFila2 h1 {
+                color: #222;
+                font-size: 70px;
+                font-family: Merriweather;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: 900;
+                line-height: normal;
+                
+            }
+            
+            .imagenFila2 {
+                width: 50%
+            }
+
+            .email {
+                margin-top: 0.5rem;
+            }
+
+            .email input {
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-right: 2rem;
+                width: 200px;
+                height: 30px;
+            }
+
+            .btn {
+                color: white;
+                background: #fb505d;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 150px;
+                height: 35px;
+                margin-left: -20px
+            }
+
+           
+            .iconos {
+                padding: 2rem;
+                text-align: center;
+                margin: 0 200px 0 200px;
+            }
+
+            .iconos-todos {
+                display: flex;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-top: 2rem;
+                text-align: left;
+                font-family: lato;
+                
+                
+            }
+
+            .icono img {
+                height: 80px;
+            }
+
+            .icono h3 {
+                color: #333;
+                margin-top: 1rem;
+                font-family: lato;
+            }
+
+            
+            .automate {
+                padding: 2rem;
+                text-align: center;
+                background: linear-gradient(to right, #fb505d, #ff7f7f);
+                color: white;
+                
+                
+            }
+               
+             h4 {
+                font-size: 50px;
+                margin: auto
+                   
+            }   
+
+            .automate .btn {
+                background: white;
+                color: #fb505d;
+                font-weight: bold;
+            }
+
+           
+            footer {
+                text-align: center;
+                padding: 0.5rem;
+                background: white;
+                color: #333;
+                margin: 30px 0 0 0;
+                
+            }
+            
+            .container{
+                font-family: lato;
+                display: flex;
+                text-align: center;
+                margin-left: 500px;
+                margin-right: 500px;
+                justify-content: space-between;
+                
+                
+            }
+
+            .redessociales img {
+                margin: 30px 0.5rem;
+                height: 20px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header class="header">
+            <img src="recursos/apres-logo.c49d8f08.svg" class="logo" />
+            <div>
+                <a href="#">Why Apres?</a>
+                <a href="#">What you can do ▾</a>
+                <a href="#">Pricing</a>
+                <a href="#">Resources ▾</a>
+            </div>
+            <nav>
+                <a href="#" class="btn btnarriba">Get Started</a>
+            </nav>
+        </header>
+
+        <section class="fila2">
+            <div class="textoFila2">
+                <h1>Automation For Humans</h1>
+                <p>Build human intelligent automations into your workflow <br>
+                without writing any code.</p>
+                <div class="email">
+                    <input type="email" placeholder="Email address" />
+                    <button class="btn">Get Started</button>
+                </div>
+            </div>
+            <img src="recursos/hero-blank.72a87926.png" class="imagenFila2" />
+        </section>
+
+        <section class="iconos">
+            <h2>What you can do with Apres</h2>
+            <p>
+                Apres is where you give your data superpowers, integrated to fit your team's needs,<br> and built to let
+                anyone unlock the potential of their data.
+            </p>
+            <div class="iconos-todos">
+                <div class="icono">
+                    <img src="recursos/apres-1.png" alt="Data Enrichment" />
+                    <h3>Data Enrichment</h3>
+                    <p>Enrich your current database with web research, cleaning, de-duplication, and more.</p>
+                </div>
+                <div class="icono">
+                    <img src="recursos/apres-2.png" alt="Computer Vision" />
+                    <h3>Computer Vision</h3>
+                    <p>Use computer vision processing to capture data from your images, PDFs, and more.</p>
+                </div>
+                <div class="icono">
+                    <img src="recursos/apres-3.png" alt="Text Analysis" />
+                    <h3>Text Analysis</h3>
+                    <p>Define and tag conversations, build dictionaries for bots, summarize articles, and more.</p>
+                </div>
+                <div class="icono">
+                    <img src="recursos/apres-4.png" alt="Transcription" />
+                    <h3>Transcription</h3>
+                    <p>Get the data you need from rich media files, returned on-demand with 95%+ accuracy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="automate">
+            <h4>Automate yourself</h4>
+            <p>And your business. Two things we can get behind.</p>
+            <button class="btn">Sign Up</button>
+        </section>
+
+        <footer>
+           <div class="container">
+               <article>Home </article>
+               <article>About Us </article>
+               <article>Pricing </article>
+               <article>Privacy </article>
+               <article>Terms </article>
+            </div>
+            <div class="redessociales">
+                <img src="recursos/facebook.svg" alt="Facebook" />
+                <img src="recursos/twitter.svg" alt="Twitter" />
+                <img src="recursos/medium.svg" alt="Medium" />
+                <img src="recursos/mail.svg" alt="Mail" />
+            </div>
+            
+            <p>Copyright ©️ 2018 Apres, Inc. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

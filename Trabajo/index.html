@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="descarga.ico" type="image/ico">
+    <title>Gran Premio de México - Fórmula 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+    </style>
+
+    
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: Parkinsans;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #E00400;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            background-image: url(F1.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            
+        }
+        
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .calendario {
+            background-image: url(bnr.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            text-align: left;
+            text-shadow: 3px 3px 3px black;
+            
+        }
+        
+        .calen {
+            margin-left: 150px;
+        }
+
+        
+        .lugar {
+            background-color: #fff;
+            display: flex;
+            text-align: left;
+            float: left;
+        }
+        
+        .lug {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .pilotos {
+            display: flex;
+            text-align: left;
+            
+        }
+        
+        .pilotosimg {
+            height: 500px;
+            width: 750px;
+        }
+        
+        .calendario ul, .pilotos ul, .lugar ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+        
+        .calendario ul li, .pilotos ul li, .lugar ul li {
+            margin: 10px 0;
+        }
+        
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        .form-container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container input,
+        .form-container button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1.1rem;
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .form-container button {
+            background-color: #111;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .form-container button:hover {
+            background-color: #555;
+            
+        }
+        
+        .galeria {
+            background-color: #e6e6e6;
+            
+        }
+        
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+           
+        }
+        
+        .galeria-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            
+        }
+        
+        footer {
+            background-color: #E00400;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        footer .container {
+            width: 80%;
+            margin: 0 auto;
+            
+        }
+        
+        iframe {
+            height: 450px;
+            width: 700px;
+            margin-right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="container" id="inicio">
+            <h1> Gran Premio de México 2024</h1>
+            <p> Fórmula 1 </p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#descripcion">Descripción</a></li>
+            <li><a href="#calendario">Calendario</a></li>
+            <li><a href="#pilotos">Pilotos</a></li>
+            <li><a href="#lugar">Lugar</a></li>
+            <li><a href="#inscripcion">Inscripción</a></li>
+        </ul>
+    </nav>
+    
+    <section id="descripcion" class="intro">
+        <div class="container">
+            <h2> Gran Premio de México </h2>
+            <p>El Gran Premio de México es uno de los eventos más esperados del calendario de la Fórmula 1. Desde 1967, la Ciudad de México ha sido sede de este evento emocionante que reúne a los mejores pilotos y miles de aficionados de todo el mundo.</p>
+        </div>
+    </section>
+    
+    <section id="calendario" class="calendario">
+        <div class="calen">
+            <h2>Calendario 2024</h2>
+            <ul>
+                <li><strong>Fecha:</strong> 25-27 de Octubre de 2024</li>
+                <li><strong>Sesión de Entrenamientos Libres:</strong> Viernes 25 de Octubre</li>
+                <li><strong>Clasificación:</strong> Sábado 26 de Octubre</li>
+                <li><strong>Carrera:</strong> Domingo 27 de Octubre</li>
+            </ul>
+        </div>
+    </section>
+    <section id="pilotos" class="pilotos">
+        <div class="container">
+            <h2>Pilotos que Participan</h2>
+            <ul>
+                <li><u> Red Bull Racing</u>: Max Verstappen y Sergio Pérez </li>
+                <li><u> Mercedes-AMG Petronas</u>: Lewis Hamilton y George Russell </li>
+                <li><u> Ferrari</u>: Carlos Sainz y Charles Leclerc </li>
+                <li><u> Aston Martin</u>: Fernando Alonso y Lance Stroll </li>
+                <li><u> Mclaren</u>: Lando Norris y Osacr Piastri </li>
+                <li><u> Alpha Tauri</u>: Yuki Tsunoda y Liam Lawson </li>
+                <li><u> Williams</u>: Alexander Albon y Franco Colapinto </li>
+                <li><u> Kick Sauber</u>: Guanyu Zhou y Valteri Bottas </li>
+                <li><u> Haas</u>: Nico Hulkenberg y Kevin Magnussen </li>
+                <li><u> Alpine</u>: Pierre Gasly y Esteban Ocon </li>
+                
+            </ul>
+            
+        </div>
+        <div class="pilotosimg"> <img src="pilotos.jpg" class="pilotosimg"> </div>
+    </section>
+
+    <section id="lugar" class="lugar">
+        <div class="lug">
+            <h2>El Lugar: Autódromo Hermanos Rodríguez</h2>
+            <p>El Gran Premio de México se celebra en el emblemático Autódromo Hermanos Rodríguez, ubicado en la Ciudad de México. Este circuito cuenta con una gran historia en la Fórmula 1 y ofrece a los aficionados una experiencia única. La pista se caracteriza por su combinación de rectas largas y  una combinación de curvas lentas y rápidas, lo que la convierte en un desafío tanto para los pilotos como para los equipos.</p>
+            <ul>
+                <li><strong>Dirección:</strong> Autódromo Hermanos Rodríguez, Ciudad de México, México</li>
+                <li><strong>Capacidad:</strong> 110,000 espectadores</li>
+                <li><strong>Características:</strong> 4.304 km de longitud, 17 curvas</li>
+                
+            </ul>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9187.454862572653!2d-99.09165121465603!3d19.403098578008958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2157a79377%3A0x33ff6581b240a2dd!2sAut%C3%B3dromo%20Hermanos%20Rodr%C3%ADguez!5e0!3m2!1ses!2ses!4v1733733694272!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <section class="galeria">
+        <div class="container">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria-grid">
+                <img src="Mexico1.avif">
+                <img src="Mexico2.jpeg">
+                <img src="Mexico3.webp">
+                <img src="mexico4.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <section class="form-container" id="inscripcion">
+        <h2>Inscripción al Evento</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Nombre Completo" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <button type="submit">Inscribirse</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gran Premio de México | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+   
+   
+
+</body>
+</html>
