@@ -1,12 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>RAMONES</title>
     <style>
+      /* Reset default margins and paddings */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      /* Navigation bar */
+      nav {
+        background-color: #111;
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #ff0000;
+      }
+
+      /* Header */
+      header {
+        text-align: center;
+        padding: 50px 0 30px;
+        background: url('imagenes/header-bg.jpg') no-repeat center/cover;
+        color: #fff;
+      }
+
+      header h1 {
+        font-size: 60px;
+        text-shadow: 2px 2px 4px #000;
+      }
+
+      /* Article sections */
+      article {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+      }
+
+      section {
+        margin-bottom: 60px;
+      }
+
+      section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #111;
+        padding-bottom: 10px;
+      }
+
+      section h3 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      section p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+
+      /* Video styling */
+      section#punk-rock video {
+        width: 100%;
+        max-width: 800px;
+        display: block;
+        margin: 0 auto 20px;
+        border: 2px solid #111;
+        border-radius: 8px;
+      }
+
+      /* Founder sections */
+      section#fundadores div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 20px;
+      }
+
+      section#fundadores div div {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      section#fundadores img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 8px;
+      }
+
+      /* Drummers */
+      section#baterias div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      section#baterias div div {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+
+      section#baterias img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      /* Discography */
+      section#discografia div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      section#discografia div div {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+
+      section#discografia img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      /* Asides */
+      aside#gris, aside#color {
+        background-color: #111;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin: 40px auto;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 8px;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #111;
+        color: #fff;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        section#fundadores div {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        section#fundadores img {
+          margin: 0 auto;
+        }
+
+        section#baterias div div, section#discografia div div {
+          width: 80%;
+        }
+      }
 
     </style>
   </head>
+
   <body>
 
     <nav>
@@ -17,113 +203,85 @@
       <a href="#">Discografía</a>
     </nav>
 
-
     <header>
       <h1>RAMONES</h1>
     </header>
 
-   
     <article>
-     
+      <!-- Punk rock section -->
       <section id="punk-rock">
-        <div>
-          <video src="imagenes/ramones.mp4" controls poster="poster.jpg"></video>
-        </div>
-
-        <div>
-          <h3>The punk-rock kings</h3>
-          <p>Uno de los nombres esenciales de la música de los 70, impulsores del punk y animadores fundamentales del rock avivando la substancia del rock’n’roll más tradicional con una potente amalgama de sonidos pop, surf, bubblegum y rock, recreados por tres acordes y pegadizas melodías de cortísima duración, los Ramones se convirtieron en uno de los grupos más influyentes de todos los tiempos.</p>
-        </div>
+        <video src="imagenes/ramones.mp4" controls poster="poster.jpg"></video>
+        <h3>The punk-rock kings</h3>
+        <p>Uno de los nombres esenciales de la música de los 70, impulsores del punk y animadores fundamentales del rock avivando la substancia del rock’n’roll más tradicional con una potente amalgama de sonidos pop, surf, bubblegum y rock, recreados por tres acordes y pegadizas melodías de cortísima duración, los Ramones se convirtieron en uno de los grupos más influyentes de todos los tiempos.</p>
       </section>
-
 
       <aside id="gris">
         <h4>Hey Ho Lets Go!!!</h4>    
       </aside>
 
-
+      <!-- Fundadores -->
       <section id="fundadores">
         <h2>Componentes fundadores</h2>
-
-        <div>  
-          <div>
-            <img src="imagenes/joey.jpg">
-          </div>
-
+        <!-- Example member -->
+        <div>
+          <div><img src="imagenes/joey.jpg" alt="Joey"></div>
           <div>
             <h3>Joey</h3>
-            <p>Cantante. El larguirucho que se plantaba en el escenario y de ahí no se movía. El tipo que fue hippie y después patentó el uniforme de campera de cuero y jeans rotos. Su forma de cantar era particular debido a que él nunca recibió ningún tipo de entrenamiento o clases. En una era de competencia vocal, cantar como un profesional fue sin duda una norma para la mayoría de las bandas de rock. Sus grietas, gruñidos, canto y su voz juvenil hizo que sea considerada una de las voces más reconocidas de punk rock.<br>Fallecio en 2001.</p>
+            <p>Cantante… Fallecio en 2001.</p>
           </div>
         </div>
-
-        <div> 
-          <div>
-            <h3>Dee Dee</h3>
-            <p>Bajista y compositor. El chico malo. Siempre fue el más creativo de la banda de Queens, también el más infeliz. Fue chapero, aprendiz de atracador, vendedor y consumidor de heroína, cómplice de un robo a mano armada… y un genio poético que se dirigía hacia una temprana sepultura pero que se salvó gracias al rock ‘n’ roll”. Consideraba que el grupo era su unica familia.<br>Fallecio en 2002.</p>
-          </div>
-
-          <div>
-            <img src="imagenes/deedee.jpg">
-          </div>
-        </div>
-
         <div>
           <div>
-            <img src="imagenes/johnny.jpg">
+            <h3>Dee Dee</h3>
+            <p>Bajista y compositor… Fallecio en 2002.</p>
           </div>
-
+          <div><img src="imagenes/deedee.jpg" alt="Dee Dee"></div>
+        </div>
+        <div>
+          <div><img src="imagenes/johnny.jpg" alt="Johnny"></div>
           <div>
             <h3>Johnny</h3>
-            <p>Guitarrista. Principalmente se caracterizó por su particular forma de tocar, siempre agachado y rara vez tocando solos largos o difíciles. Hacía subidas y bajadas con la guitarra y tenía una habilidad para moverse y tocar muy rápido al mismo tiempo. Mantuvo una relación distante y conflictiva con Joey, sobre todo desde que le robo la novia.<br>Fallecio en 2004.</p>
+            <p>Guitarrista… Fallecio en 2004.</p>
           </div>
         </div>
       </section>
 
-
+      <!-- Baterias -->
       <section id="baterias">
         <h2>Los baterias</h2>
-
         <div>
           <div>
             <h3>Tommy</h3>
-            <img src="imagenes/tommy.jpg" >
+            <img src="imagenes/tommy.jpg" alt="Tommy">
             <p>1974-78</p>
           </div>
-
           <div>
             <h3>Marky</h3>
-            <img src="imagenes/marky.jpg" >
+            <img src="imagenes/marky.jpg" alt="Marky">
             <p>1978-83 y 1987-96</p>
           </div>
-
           <div>
             <h3>Richie</h3>
-            <img src="imagenes/richie.jpg">
+            <img src="imagenes/richie.jpg" alt="Richie">
             <p>1983-87</p>
           </div>
         </div>
-
       </section>
-
 
       <aside id="color">
         <h4>Gabba Gabba Hey!</h4>
       </aside>
 
-
+      <!-- Discografía -->
       <section id="discografia">
         <h2>Discografía</h2>
-
         <div>
-
           <div>
-            <img src="imagenes/angels.png">
+            <img src="imagenes/angels.png" alt="Angels">
             <p>Lamentablemente ya no podremos disfrutar de los Ramones en directo nunca más. Pero nos dejaron un buen puñado de discos cargados de himnos generacionales.</p>
-            <p>Su influencia también pervive en grupos de diferentes epocas: Green Day, Shonen Knife, Nikis, The Strokes, Foo Fighters ...</p>
           </div>
-
           <div>
-            <img src="imagenes/logo.png">
+            <img src="imagenes/logo.png" alt="Logo">
             <p>
               Ramones (76)<br>
               Leave home (77)<br>
@@ -141,16 +299,13 @@
               ¡Adiós amigos! (95)
             </p>
           </div>
-
         </div>
       </section>
-
     </article>
-
 
     <footer>
       <h3>Creado por Richart</h3>
-    </footer> 
+    </footer>
 
   </body>
 </html>
